@@ -1,5 +1,5 @@
 class Embeditor{
-    constructor(container,options={})(
+    constructor(container,options={}){
         if(!(container instanceof Element))throw new Error("Editor: first argument must be a Dom element");
         this._container=container;
         this._onChange=typeof options._onChange==="function"?options._onChange:null;
@@ -34,5 +34,5 @@ class Embeditor{
         root.appendChild(gutter);
         root.appendChild(wrap);
         container.appendChild(root);
-    )
+    }
 }
