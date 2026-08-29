@@ -1,0 +1,76 @@
+.eme-root{
+    --eme-bg:#21252b;
+    --eme-text:#ece9e1;
+    --eme-gutter-color:#5c6270;
+    --eme-gutter-border:#333941;
+    --eme-caret:#f0ede4;
+    --eme-font-size:14px;
+    --eme-line-height:1.7;
+    --eme-radius:6px;
+
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    background: var(--eme-bg);
+    border-radius: var(--eme-radius);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.eme-root *{
+    box-sizing: border-box;
+}
+
+.eme-gutter{
+    flex: 0 0 auto;
+    font-size: var(--eme-font-size);
+    line-height: var(--eme-line-height);
+    color: var(--eme-gutter-color);
+    background: var(--eme-bg);
+    border-radius: 1px solid var(--eme-gutter-border);
+    text-align: right;
+    padding: 14px 12px 14px 14px;
+    overflow: hidden;
+    user-select: none;
+    white-space: pre;
+}
+
+.eme-editor-wrap{
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.eme-editor-wrap pre,.eme-textarea{
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 14px 18px;
+    font-size: var(--eme-font-size);
+    line-height: var(--eme-line-height);
+    tab-size: 2;
+    white-space: pre;
+    overflow: auto;
+    border: none;
+}
+
+.eme-editor-wrap pre{
+    color: var(--eme-text);
+    pointer-events: none;
+    background: transparent;
+}
+
+.eme-editor-wrap pre code{
+    font-family: inherit;
+}
+
+.eme-textarea{
+    outline: none;
+    resize: none;
+    background: transparent;
+    color: var(--eme-text);
+    caret-color: var(--eme-caret);
+}
