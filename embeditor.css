@@ -4,6 +4,7 @@
     --eme-gutter-color:#5c6270;
     --eme-gutter-border:#333941;
     --eme-caret:#f0ede4;
+    --eme-font:"SFMono-Regular",Consolas,Menlo,monospace;
     --eme-font-size:14px;
     --eme-line-height:24px;
     --eme-radius:6px;
@@ -26,6 +27,7 @@
 
 .eme-gutter{
     flex: 0 0 auto;
+    font-family: var(--eme-font);
     font-size: var(--eme-font-size);
     line-height: var(--eme-line-height);
     color: var(--eme-gutter-color);
@@ -50,6 +52,7 @@
     inset: 0;
     margin: 0;
     padding: 14px 18px;
+    font-family: var(--eme-font);
     font-size: var(--eme-font-size);
     line-height: var(--eme-line-height);
     tab-size: 2;
