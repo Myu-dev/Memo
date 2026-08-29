@@ -5,7 +5,7 @@
     --eme-gutter-border:#333941;
     --eme-caret:#f0ede4;
     --eme-font-size:14px;
-    --eme-line-height:1.7;
+    --eme-line-height:24px;
     --eme-radius:6px;
     --eme-stripe:rgba(255,255,255,0.035);
 
@@ -30,7 +30,7 @@
     line-height: var(--eme-line-height);
     color: var(--eme-gutter-color);
     background: var(--eme-bg);
-    border-radius: 1px solid var(--eme-gutter-border);
+    border-right: 1px solid var(--eme-gutter-border);
     text-align: right;
     padding: 14px 12px 14px 14px;
     overflow: hidden;
