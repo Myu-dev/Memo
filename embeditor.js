@@ -61,14 +61,14 @@ class Embeditor{
                 this._textarea.selectionStart=this._textarea.selectionEnd=start+unit.length;
                 this._onInput();
             }
-
-            textarea.addEventListener("input",this._onInput);
-            textarea.addEventListener("scroll",this._onScroll);
-            textarea.addEventListener("keydown",this._onKeydown);
-
-            this._updateGutter;
-            this._updateMirror;
         }
+
+        textarea.addEventListener("input",this._onInput);
+        textarea.addEventListener("scroll",this._onScroll);
+        textarea.addEventListener("keydown",this._onKeydown);
+
+        this._updateGutter;
+        this._updateMirror;
     }
 
     _updateGutter(){
