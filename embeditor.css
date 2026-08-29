@@ -7,6 +7,7 @@
     --eme-font-size:14px;
     --eme-line-height:1.7;
     --eme-radius:6px;
+    --eme-stripe:rgba(255,255,255,0.035);
 
 
     display: flex;
@@ -73,4 +74,17 @@
     background: transparent;
     color: var(--eme-text);
     caret-color: var(--eme-caret);
+}
+
+.eme-gutter,.eme-editor-wrap pre,.eme-textarea{
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent var(--eme-line-height),
+        var(--eme-stripe) var(--eme-line-height),
+        var(--eme-stripe) calc(var(--eme-line-height)*2)
+    );
+    background-size: 100% calc(var(--eme-line-height)*2);
+    background-origin: content-box;
+    background-attachment: local;
 }
